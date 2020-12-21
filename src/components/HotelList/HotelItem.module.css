@@ -1,0 +1,55 @@
+.root {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 40%;
+    z-index: 0;
+}
+.imageSrc {
+    width: 95%;
+}
+
+.info {
+    width: 60%;
+    display: grid;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #191970;
+}
+
+.adress {
+    position: relative;
+
+}
+
+.rating {
+    position: relative;
+
+}
+
+.city {
+    position: relative;
+    
+}
+
+.facilityList {
+    position: relative;
+
+}
+
+.facilityItem {
+    position: relative;
+
+}
