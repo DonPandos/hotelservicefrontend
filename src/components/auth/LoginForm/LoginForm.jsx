@@ -1,6 +1,7 @@
 import react, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form";
 import API from '../../../utils/API'
+import {useDispatch} from "react-redux";
 
 const LoginForm = () => {
 
@@ -8,6 +9,7 @@ const LoginForm = () => {
     const [isAutorizated, setAutorization] = useState(false);
     const [isError, setIsError] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
+    const dispatch = useDispatch();
 
     const handleOnSubmit = (data) => {
         API.post("/auth/login", data, {

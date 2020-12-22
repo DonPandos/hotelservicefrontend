@@ -1,6 +1,59 @@
 .root {
     height: 100vh;
     width: 20%;
-    background-color: green;
     float: left;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #080F5B;
+
 }
+
+.label {
+    text-align: center;
+    background-image: none;
+}
+
+.citySelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("");
+    width: 70%;
+    margin-left: 15%;
+    border: none;
+    background-color: #15DB95;
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: #080F5B;
+    font-size: 14px;
+    text-align: center;
+}
+ .citySelect:focus {
+     outline: 0;
+ }
+
+ .facilities {
+
+ }
+
+ .facilities ul {
+     list-style: none;
+ }
+
+ .facilities input {
+     border: none;
+ }
+
+ .facilities li {
+     margin: 10px 0px;
+ }
+
+ .facilities input {
+
+ }
+
+ .facilities label {
+     margin-left: 10px;
+ }

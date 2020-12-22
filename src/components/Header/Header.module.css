@@ -1,3 +1,39 @@
-.test {
-    color: red;
+.root {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    flex: 0 1 auto;
+}
+
+.logo {
+    height: 100%;
+    width: 82px;
+    cursor: pointer;
+}
+
+.loginInfo {
+/*    flex: 1 0 auto;*/
+    vertical-align: center;
+}
+
+.loginButton {
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-color: #080F5B;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #080F5B inset, 0 0 0 0 #080F5B;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    box-shadow: 0 0 10px 0 #080F5B inset, 0 0 10px 4px #080F5B;
+    color: #080F5B;
 }

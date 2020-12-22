@@ -9,7 +9,8 @@ const HotelList = (props) => {
                                                            description={hotelItem.description}
                                                            rating={hotelItem.rating}
                                                            city={hotelItem.city}
-                                                           facilities={hotelItem.facilities}/>)
+                                                           facilities={hotelItem.facilities}
+                                                           image={hotelItem.image}/>)
 
     return (
         <div className={s.root}>

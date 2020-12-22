@@ -3,6 +3,9 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 .image {
@@ -15,41 +18,77 @@
 
 .info {
     width: 60%;
-    display: grid;
-}
-
-.flexbox {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
+.heading {
+    flex-basis: 80%;
+    height: 25%;
+}
+
 .name {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     color: #191970;
 }
 
-.adress {
-    position: relative;
-
-}
-
-.rating {
-    position: relative;
-
-}
-
 .city {
-    position: relative;
-    
+    color: #080F5B;
+    font-size: 12px;
+    text-decoration: underline;
 }
 
-.facilityList {
-    position: relative;
-
+.ratingBlock {
+    width: 20%;
+    height: 25%;
 }
 
-.facilityItem {
-    position: relative;
+.ratingItem {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    background-color: #0D19A3;
+    color: #F4E4C1;
+    border-radius: 10px;
+    float: right;
+    font-size: 18px;
+}
 
+.description {
+    height: 75%;
+    width: 70%;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.moreBlock {
+    width: 30%;
+    position: relative;
+}
+
+.moreButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*background-color: #080F5B;*/
+    /*color: #F4E4C1;*/
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-color: #080F5B;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #080F5B inset, 0 0 0 0 #080F5B;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.moreButton:hover {
+    box-shadow: 0 0 10px 0 #080F5B inset, 0 0 10px 4px #080F5B;
+    color: #080F5B;
 }
