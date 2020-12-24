@@ -1,4 +1,6 @@
 import s from './HotelItem.module.css'
+import { NavLink } from 'react-router-dom'
+
 
 const HotelItem = (props) => {
 
@@ -19,7 +21,10 @@ const HotelItem = (props) => {
                 </div>
                 <div className={s.description}>{props.description}</div>
                 <div className={s.moreBlock}>
-                    <a className={s.moreButton}>Подробнее</a>
+                    <NavLink className={s.moreButton} to={{
+                        pathname: '/hotelinfo',
+                        name: props.name
+                    }}>Подробнее</NavLink>
                 </div>
             </div>
         </div>

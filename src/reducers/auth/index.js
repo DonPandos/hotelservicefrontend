@@ -1,8 +1,8 @@
 
-
 const initialState = {
     isLoggedIn: false,
     token: '',
+    username: '',
 }
 
 const authReducer = (state = initialState, action) => {
@@ -10,8 +10,9 @@ const authReducer = (state = initialState, action) => {
         case 'SET_TOKEN':
             return { ...state, token: action.payload }
         case 'SET_LOGGED_IN':
-            console.log('reduced')
             return { ...state, isLoggedIn: action.payload }
+        case 'SET_USERNAME':
+            return { ...state, username: action.payload }
         default:
             return state;
     }

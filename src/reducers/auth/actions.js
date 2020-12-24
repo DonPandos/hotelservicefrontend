@@ -5,15 +5,22 @@ const setToken = (token) => {
     }
 }
 
-const setLoggedIn = () => {
-    console.log('dispatched');
+const setLoggedIn = (isLoggedIn) => {
     return {
         type: 'SET_LOGGED_IN',
-        payload: true
+        payload: isLoggedIn
+    }
+}
+
+const setUsername = (username) => {
+    return {
+        type: 'SET_USERNAME',
+        payload: username,
     }
 }
 
 export {
     setToken,
-    setLoggedIn
+    setLoggedIn,
+    setUsername
 }

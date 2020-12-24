@@ -5,10 +5,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: #080F5B;
 }
 
 .logoContainer {
-    flex: 0 1 auto;
+    /*flex: 0 1 auto;*/
 }
 
 .logo {
@@ -20,6 +21,23 @@
 .loginInfo {
 /*    flex: 1 0 auto;*/
     vertical-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.usernameLabel {
+
+}
+
+.exitButton {
+    margin-left: 100px;
+}
+
+.exitButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0D19A3;
 }
 
 .loginButton {
