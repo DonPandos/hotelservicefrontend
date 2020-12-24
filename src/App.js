@@ -11,6 +11,7 @@ import { setHotels } from './reducers/hotel/actions'
 import API from './utils/API';
 import HotelInfo from "./components/HotelInfo/HotelInfo";
 import {setCities} from "./reducers/city/actions";
+import SignInForm from "./components/auth/SignInForm/SignInForm";
 
 const App = (props) => {
   const auth = useSelector(state => state.auth)
@@ -37,7 +38,12 @@ const App = (props) => {
          <Route exact path='/' component={() => <HotelList/>} />
          <Route
              path='/hotelinfo'
-             render={routerProps => <HotelInfo { ...routerProps }/>} />
+             render={routerProps => <HotelInfo { ...routerProps }/>}
+         />
+         <Route
+             path='/signin'
+             render={() => <SignInForm />}
+         />
        </div>
      </BrowserRouter>
   );

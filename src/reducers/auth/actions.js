@@ -12,15 +12,19 @@ const setLoggedIn = (isLoggedIn) => {
     }
 }
 
-const setUsername = (username) => {
+const setUsernameInfo = (username, firstname, lastname) => {
     return {
         type: 'SET_USERNAME',
-        payload: username,
+        payload: {
+            username: username,
+            firstname: firstname,
+            lastname: lastname,
+        }
     }
 }
 
 export {
     setToken,
     setLoggedIn,
-    setUsername
+    setUsernameInfo,
 }

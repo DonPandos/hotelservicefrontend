@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useForm } from "react-hook-form";
 import API from '../../../utils/API'
 import {useDispatch} from "react-redux";
-import { setLoggedIn, setToken, setUsername } from "../../../reducers/auth/actions";
+import { setLoggedIn, setToken, setUsernameInfo } from "../../../reducers/auth/actions";
 import { useHistory } from "react-router-dom";
 
 const LoginForm = () => {
@@ -21,12 +21,15 @@ const LoginForm = () => {
                 'Content-Type': 'application/json'
             }
         }).then((response) => {
-            console.log(response.data);
-            dispatch(setLoggedIn(true));
-            dispatch(setToken(response.data.token));
-            dispatch(setUsername(response.data.username));
-            history.push('/');
-            setIsError(false);
+            dispatch(setLoggedIn(true))
+            dispatch(setToken(response.data.token))
+            dispatch(setUsernameInfo(
+                response.data.username,
+                response.data.firstname,
+                response.data.lastname,
+            ))
+            history.push('/')
+            setIsError(false)
         }).catch ((error) => {
             setErrorMessage(error.response.data.message);
             setIsError(true);

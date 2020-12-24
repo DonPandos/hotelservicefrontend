@@ -7,7 +7,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import {setLoggedIn} from "../../reducers/auth/actions";
 
 const Header = (props) => {
-    const username = useSelector(state => state.auth.username);
+    const auth = useSelector(state => state.auth);
     const dispatch = useDispatch();
 
     const logout = () => {
@@ -23,7 +23,7 @@ const Header = (props) => {
             <div >
                 {props.isLoggedIn ?
                     <div className={s.loginInfo}>
-                        <div className={s.usernameLabel}>{username}</div>
+                        <div className={s.usernameLabel}>{auth.firstname + ' ' + auth.lastname}</div>
                         <div className={s.exitButton} onClick={logout}>Выйти</div>
                     </div>
                     :

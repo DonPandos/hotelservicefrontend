@@ -1,8 +1,11 @@
+import {act} from "@testing-library/react";
 
 const initialState = {
     isLoggedIn: false,
     token: '',
     username: '',
+    firstname: '',
+    lastname: '',
 }
 
 const authReducer = (state = initialState, action) => {
@@ -12,7 +15,12 @@ const authReducer = (state = initialState, action) => {
         case 'SET_LOGGED_IN':
             return { ...state, isLoggedIn: action.payload }
         case 'SET_USERNAME':
-            return { ...state, username: action.payload }
+            return {
+                ...state,
+                username: action.payload.username,
+                firstname: action.payload.firstname,
+                lastname: action.payload.lastname
+            }
         default:
             return state;
     }

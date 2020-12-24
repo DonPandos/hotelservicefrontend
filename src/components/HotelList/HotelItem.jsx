@@ -23,7 +23,13 @@ const HotelItem = (props) => {
                 <div className={s.moreBlock}>
                     <NavLink className={s.moreButton} to={{
                         pathname: '/hotelinfo',
-                        name: props.name
+                        name: props.name,
+                        image: props.image,
+                        adress: props.adress,
+                        description: props.description,
+                        rating: props.rating,
+                        city: props.city,
+                        facilities: props.facilities
                     }}>Подробнее</NavLink>
                 </div>
             </div>
