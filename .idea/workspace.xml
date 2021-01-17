@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f758af4-a183-4d8b-be26-69669b5ddf71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/auth/SignInForm/SignInForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/auth/SignInForm/SignInForm.module.css" afterDir="false" />
+    <list default="true" id="5f758af4-a183-4d8b-be26-69669b5ddf71" name="Default Changelist" comment="Nice commit">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilterBar/FilterBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilterBar/FilterBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HotelInfo/HotelInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HotelInfo/HotelInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HotelInfo/HotelInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HotelInfo/HotelInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HotelList/HotelItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HotelList/HotelItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/LoginForm/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/LoginForm/LoginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/auth/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/auth/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +53,22 @@
       <workItem from="1608630801159" duration="11652000" />
       <workItem from="1608655792072" duration="3096000" />
       <workItem from="1608812448685" duration="8152000" />
-      <workItem from="1608826242159" duration="4039000" />
+      <workItem from="1608826242159" duration="4141000" />
+      <workItem from="1609183127481" duration="518000" />
+      <workItem from="1610630614330" duration="3554000" />
+      <workItem from="1610898978100" duration="287000" />
+      <workItem from="1610899816628" duration="696000" />
+      <workItem from="1610901551695" duration="1472000" />
+      <workItem from="1610903639348" duration="1343000" />
     </task>
+    <task id="LOCAL-00001" summary="Nice commit">
+      <created>1608837267937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608837267937</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,5 +85,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nice commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nice commit" />
   </component>
 </project>
